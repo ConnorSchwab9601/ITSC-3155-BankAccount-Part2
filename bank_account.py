@@ -28,4 +28,3 @@ class bank:
         else:
             self.current_balance -= inp
             print(self.current_balance, " is the new current balance after withdraw")
-

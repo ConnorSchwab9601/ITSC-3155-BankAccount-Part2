@@ -2,11 +2,12 @@ from bank_account import bank
 
 
 class savings_account(bank):
-    def __init__(self, bank, account_number, interest):
-        super().__init__(bank)
+    def __init__(
+        self, name, balance, minimum_balance, routing_number, account_number, interest
+    ):
+        super().__init__(name, balance, minimum_balance, routing_number)
         self.__account_number = account_number
         self.interest = interest
 
-    def interest_acculated(self, bank, interest):
-        interest = bank.balance * 0.05
-        return interest
+    def interest_acc(self):
+        return self.current_balance * 0.05
