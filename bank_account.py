@@ -29,12 +29,3 @@ class bank:
             self.current_balance -= inp
             print(self.current_balance, " is the new current balance after withdraw")
 
-
-b1 = bank("Connor", 10000, 10)
-b2 = bank("Schwab", 500, 100)
-
-
-b1.deposit()
-b1.withdraw()
-b1.print_customer_information()
-b2.print_customer_information()
