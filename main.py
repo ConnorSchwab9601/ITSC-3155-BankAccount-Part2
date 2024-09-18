@@ -11,6 +11,18 @@ class main:
 
     print("Reading information from the first saving account. ")
     s1.print_customer_information()
-    print("Account number: " + str(s1._routing_number))
+    print("Routing number: " + str(s1._routing_number))
     print("accumlating a 5% interest for routing number " + str(s1._routing_number))
     print("Account number " + str(s1._routing_number) + "now has $" + str(s1.interest_acc()) + " in interest")
+
+    print("Reading information from the first checking account. ")
+    c1.print_customer_information()
+    print("Routing number: " + str(c1._routing_number))
+    transfer = int(input("How much would you like to transfer from checking account"))
+    if(c1.tranfer(transfer)):
+        c1.current_balance -= transfer
+        print("Transfer went through account balance has been updated")
+    else:
+        print("The amount you entered is above the transfer limit for the account please try again later")
+
+
