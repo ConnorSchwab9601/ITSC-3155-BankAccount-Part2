@@ -4,7 +4,7 @@ class bank:
         self.customer_name = name
         self.current_balance = balance
         self.minimum_balance = minimum_balance
-        self.routing_number = routing_number
+        self._routing_number = routing_number
     def print_customer_information(self):
         print("Printing customer information below for ", bank.bankTitle)
         print("Name-", self.customer_name)
