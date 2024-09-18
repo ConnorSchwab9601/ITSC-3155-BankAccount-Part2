@@ -1,9 +1,10 @@
 class bank:
     bankTitle = "Not America Bank"
-    def __init__(self, name, balance, minimum_balance):
+    def __init__(self, name, balance, minimum_balance, routing_number):
         self.customer_name = name
         self.current_balance = balance
         self.minimum_balance = minimum_balance
+        self.routing_number = routing_number
     def print_customer_information(self):
         print("Printing customer information below for ", bank.bankTitle)
         print("Name-", self.customer_name)
