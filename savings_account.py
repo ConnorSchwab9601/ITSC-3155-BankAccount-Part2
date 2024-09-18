@@ -10,4 +10,5 @@ class savings_account(bank):
         self.interest = interest
 
     def interest_acc(self):
-        return self.current_balance * 0.05
+        self.interest = self.current_balance * 0.05
+        return self.interest
