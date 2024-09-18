@@ -1,3 +1,6 @@
+from bank_account import bank
+
+
 class savings_account(bank):
     def __init__(self, bank, account_number, interest):
         super().__init__(bank)

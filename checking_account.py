@@ -1,3 +1,6 @@
+from bank_account import bank
+
+
 class checking_account(bank):
     def __init__(self, bank, account_number, transfer_max):
         super().__init__(bank)
@@ -5,7 +8,7 @@ class checking_account(bank):
         self.__transfer_max = transfer_max
 
     def tranfer(self, transfer):
-        if(transfer <= self.__transfer_max):
-            return  True
+        if transfer <= self.__transfer_max:
+            return True
         else:
             return False
